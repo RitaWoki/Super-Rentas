@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+.show-image {
+  background: transparent;
+  border: none;
+  color: blue;
+}
+.delete-rental {
+  background: transparent;
+  border: none;
+  color: red;
+}
