@@ -1,11 +1,10 @@
 {{yield}}
 
 <p class="well">
-  {{rental.owner}}'s {{rental.type}} in {{rental.city}}
-  {{#if isImageShowing }}
+  {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
+  {{#if isImageShowing}}
     <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
-    <button class="show-image" {{action 'imageShow'}}>Show Image</button>
+    <button {{action 'imageShow'}}>Image</button>
   {{/if}}
-  <button class="delete-rental" {{action 'delete' rental}}>Delete Rental</button>
 </p>
