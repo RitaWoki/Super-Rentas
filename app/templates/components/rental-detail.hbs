@@ -6,7 +6,7 @@ available by arrangement through {{rental.owner}}.
 <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
 <hr>
 <h4>Reviews</h4>
-  {{#each rental.reviews as |review|}}
+  {{#each sortedReviews as |review|}}
     <div class="well">
       {{review-tile review=review destroyReview="destroyReview"}}
     </div>
